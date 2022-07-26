@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="chrome" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bananas to apples</title>
+    <style>
+      .fruit {
+        width: 500px;
+        margin: 30px auto 30px auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        width: 300px;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h3 style="text-align: center">over mouse</h3>
+    <hr />
+    <div class="fruit">
+      <img
+        src="img/apple.jpg"
+        alt="apples"
+        onmouseover="this.src='img/banana.jpg'"
+        onmouseout="this.src='img/apple.jpg'"
+      />
+    </div>
+    <script>
+      document.writeln("<h3> 자바스크립트로 글자 표현하고 있습니다.</h3>");
+      document.writeln("<hr>");
+      document.writeln("<h6> 자바스크립트로 글자 표현하고 있습니다.</h6>");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>switch 문 2</title>
+    <script defer>
+      let number1 = prompt("년도를 입력하세요", 2022);
+      let year = parseInt(number1, 10);
+      let number = prompt("달을 입력하세요", 1);
+      let month = parseInt(number, 10);
+      let day;
+      if (month >= 1 && month <= 12) {
+        switch (month) {
+          case 4:
+          case 6:
+          case 9:
+          case 11:
+          case 8:
+            day = 30;
+            break;
+          case 2:
+            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+              day = 29;
+            } else {
+              day = 28;
+            }
+        }
+
+        document.write(year + "년 " + month + "월은 " + day + "일입니다.");
+      } else {
+        document.write(month + "월은 존재하지 않습니다.");
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

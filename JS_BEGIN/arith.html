@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>산술연산</title>
+  </head>
+  <body>
+    <h3>산술연산</h3>
+    <hr />
+    <h4>수와 수를 연산하여 수를 내어줌</h4>
+    <hr />
+    <script>
+      let x = parseInt(prompt("숫자 입력", 1));
+      let y = parseInt(prompt("숫자 입력", 1));
+      document.write("x =" + x + "<br />");
+      document.write("y =" + y + "<br />");
+      document.write("x + y=" + (x + y) + "<br />");
+      document.write("x - y=" + (x - y) + "<br />");
+      document.write("x * y=" + x * y + "<br />");
+      document.write("x / y=" + x / y + "<br />");
+      document.write("x % y=" + (x % y) + "<br />");
+      let total = 100 + (x * 2) / 4 - 3; // total은 113
+      let div = x / 10; // div는 3.2
+      let mod = x % 2; // x를 2로 나눈 나머지, 0
+      document.write("x : " + x + "<br><br>");
+      document.write("100 + x*2/4 - 3 = " + total + "<br>");
+      document.write("x/10 = " + div + "<br>");
+      document.write("x%2 = " + mod + "<br>");
+    </script>
+  </body>
+</html>

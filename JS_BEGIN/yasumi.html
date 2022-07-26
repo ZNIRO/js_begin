@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer>
+      let day = prompt("요일을 입력하세요");
+      switch (day) {
+        case "월":
+        case "화":
+        case "수":
+        case "목":
+        case "금":
+          document.write("정상영업"); //오 한번에 해결됨
+          break;
+        case "토":
+        case "일":
+          document.write("휴일");
+          break;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

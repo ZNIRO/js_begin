@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch 문</title>
+    <script defer>
+      let fruits = prompt("좋아하는 과일이 무엇인가요", "사과");
+      switch (fruits) {
+        case "바나나":
+          price = 200;
+          break;
+        case "사과":
+          price = 300;
+          break;
+        case "수박":
+          price = "999,999";
+          break;
+        default:
+          price = 0;
+      }
+      if (price == 0) {
+        document.write(fruits + "(은)는 판매하지 않는 과일입니다.");
+      } else {
+        document.write(
+          "당신이 선택한 과일 " + fruits + "은/는 " + price + "원 입니다."
+        );
+      }
+      //안팔아요를 출력할 경우에 당신이 선택한~ 문장을 안보이게하고싶으면어떻게해야하나요???//
+    </script>
+  </head>
+  <body></body>
+</html>
